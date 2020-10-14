@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('./font/font/iconfont.eot');
+    src: url('./font/font/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('./font/font/iconfont.woff2') format('woff2'),
+        url('./font/font/iconfont.woff') format('woff'),
+        url('./font/font/iconfont.ttf') format('truetype'),
+        url('./font/font/iconfont.svg#iconfont') format('svg');
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html,body{
+    width: 100%;
+    height: 100%;
+  }
+  .flx{
+    display: flex;
+  }
+  /* 公共样式 */
+.topBox{
+  width: 100%;
+  height: 40px;
+  justify-content: flex-end;
+}
+.link{
+  height: 40px;
+  width: 80px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 12px;
+}
+/* logo */
+.logo{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 240px;
+  height: 120px;
+
+  line-height: 120px;
+  text-align: center;
+
+  background: #fff;
+  color:green;
+  font-size: 50px;
+}
+/* logo 结束 */
+.nav{
+  width: 100%;
+  height: 80px;
+  background: green;
+}
+.navBox{
+  width: 100%;
+  height: 80px;
+  justify-content: flex-end;
+}
+.navItem{
+  width: 120px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #fff;
+  border-right: 1px solid #fff;
+}
+/* banner */
+.banner{
+  height: 350px;
+  width: 100%;
+  background: pink;
+}
+.bannerImg , .bannerTxt{
+  flex: 1;
+  height: 350px;
+}
+.bannerImg{
+  background: yellow;
+}
+  /*pc*/
+  @media screen and (min-device-width:1150px){
+    /*.hd{
+      color: blueviolet;
+    }*/
+    .inner{
+      width: 1150px;
+      margin: auto;
+      position: relative;
+    }
+    .bannerTxt{
+      background: khaki;
+      color: #fff;
+      box-sizing: border-box;
+      padding: 105px 0;
+    }
+    .ch-txt{
+      height: 50px;
+      line-height: 50px;
+      font-size: 32px;
+      text-align: left;
+      text-indent: 100px;
+    }
+    .EN-txt{
+      height: 80px;
+      line-height: 80px;
+      font-size: 50px;
+      text-align: center;
+    }
+    .en-txt-small{
+      height: 20px;
+      line-height: 20px;
+      font-size: 14px;
+      text-indent: 290px;
+    }
+    /*内容*/
+    .contentBox{
+      width: 100%;
+      height: 350px;
+      justify-content: space-between;
+    }
+    .ctt-lt , .ctt-rt{
+      width: 570px;
+      height: 100%;
+
+    }
+    .ctt-lt{
+      background: skyblue;
+    }
+    .ctt-rt{
+      background: wheat;
+    }
+    /*footer*/
+    .ft{
+     background: darksalmon;
+     color: #fff;
+     text-align: center;
+    }
+    .ft .inner span{
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      margin: 0 5px;
+    }
+  }
+  /*平板*/
+  @media screen and (min-device-width:650px) and (max-device-width:1150px){
+    .inner{
+      width: 1150px;
+      position: relative;
+  }
+  .md-none{
+    display: none;
+  }
+  .bannerTxt{
+    background: green;
+    color: #fff;
+    box-sizing: border-box;
+    padding:105px 30px;
+}
+.ch-txt{
+    height: 40px;
+    line-height: 40px;
+    font-size: 32px;
+    text-align: left;
+    text-indent: 70px;
+}
+.en-txt{
+    height: 80px;
+    line-height: 80px;
+    font-size: 50px;
+    text-align: center;
+}
+.en-txt-small{
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    text-indent: 230px;
+}
+}
+  
+
+  /*手机端*/
+  @media screen and (max-device-width:650px){
+    .sl-none{
+      display: none;
+    }
+    .logo{
+      position: static;
+     width: 100%;
+     height: 1.875rem;
+
+  line-height: 1.875rem;
+
+  background: #fff;
+  color:green;
+  font-size: .87125rem;
+    }
+    .nav{
+      height: 1.25rem;
+    }
+    .navBox{
+      justify-content: flex-start;
+      height: 1.25rem;
+    }
+    .navItem{
+      width: 1.875rem;
+      height: 1.25rem;
+      line-height: 1.25rem;
+    }
+    /* banner */
+    .banner{
+      height: 2.375rem;
+      width: 100%;
+    }
+    .bannerImg , .bannerTxt{
+      flex: 1;
+      height: 2.34375rem;
+    }
+    .bannerTxt{
+      background: lightcoral;
+      color: #fff;
+      box-sizing: border-box;
+    }
+    .contentBox{
+      flex-direction: column;
+    }
+    .ctt-lt, .ctt-rt{
+      width: 100%;
+      height: 3.125rem;
+    }
+    .ctt-lt{
+      background: lightseagreen;
+    }
+    .ctt-rt{
+      background: magenta;
+    }
+  }
